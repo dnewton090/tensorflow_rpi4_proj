@@ -18,7 +18,7 @@ python3 -m virtualenv venv
 source venv/bin/activate
 ```
  
-Update Linux packages
+Update Linux packages, install python dependencies
 ```
 sudo apt update
 sudo apt-get install -y libhdf5-dev libc-ares-dev libeigen3-dev gcc gfortran python-dev libgfortran5 \
@@ -31,11 +31,14 @@ sudo pip3 install h5py==2.9.0
 sudo pip3 install pybind11
 pip3 install -U --user six wheel mock
 sudo pip3 uninstall tensorflow
+```
+Utilize this brilliant TF wheel update found at the repo @PINTO0309
+```
 wget https://github.com/PINTO0309/Tensorflow-bin/raw/master/tensorflow-1.15.0-cp37-cp37m-linux_armv7l.whl
 sudo pip3 install tensorflow-1.15.0-cp37-cp37m-linux_armv7l.whl
 ```
 
-#### Test the TF install worked correctly
+Test whether TF install worked correctly
 ```
 python3
 import tensorflow as tf
@@ -43,8 +46,8 @@ tf.__version__  <!---'1.15' --->
 exit()
 ```
 
-#### Install OpenCV
-Linux dependencies
+Install OpenCV
+-- First, the Unix dependencies
 ```
 sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
 sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
