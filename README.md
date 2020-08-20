@@ -1,4 +1,4 @@
-# Object Detection on Raspberry Pi 4B (TF 1.15, OpenCV 3.4)
+## Object Detection on RPi 4B (TF 1.15, OpenCV 3.4)
 
 Adapting a great existing tutorial by @EdjeElectronics
 https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi
@@ -11,4 +11,4 @@ Newer tutorials also mention @lheontra for his work developing TF 2.x binaries f
 
 Detailed instructions to come...
 
-M
+DN
