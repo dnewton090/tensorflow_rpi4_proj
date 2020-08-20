@@ -3,8 +3,12 @@
 #### This is an update of an existing tutorial provided by @EdjeElectronics...
 'https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi
 
-'...although with correct binaries for Tensorflow 1.15 (pip versions are at 1.14) and fixes for OpenCV compatability.  After weeks of inspection it finally boiled down to finding a custom binary developed by @PINTO0039 -- many thanks for your efforts  successful patching TensorFlow issues #15062,#21574,#21855,#23082,#25120,#25748,#29617,#29704,#30359 andeveloping the wheel for Armv7l.
+...although with correct binaries for Tensorflow 1.15 and fixes for OpenCV compatability.  
+After weeks of inspection it finally boiled down to finding a custom binary developed by @PINTO0039 
+-- many thanks for your efforts  successful patching TensorFlow issues #15062,#21574,#21855,#23082,#25120,#25748,#29617,#29704,#30359 and eveloping the wheel for Armv7l.
  
+TF2.x currently has issues with requiring a Hadoop implementation, whilst PyPI support is only up to TFv1.14.
+
 #### Code
 Download PIP and the virtual environment
 ```
