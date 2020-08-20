@@ -58,7 +58,7 @@ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 sudo apt-get install libxvidcore-dev libx264-dev
 sudo apt-get install qt4-dev-tools libatlas-base-dev
 ```
-Ensure we are using the following version *at a maximum* 
+OpenCV-Python v4 isn't working on Pi4. Install 3.4.6.27
 ```pip3 install opencv-python==3.4.6.27
 python3
 import cv2
@@ -110,10 +110,7 @@ python3 Object_detection_picamera.py
 python3 Object_detection_picamera.py 
 ```
 
-## More instructions to come.
-
-
-Newer tutorials also mention @lheontra for his work developing TF 2.x binaries for Arm -- muito obrigado por seus esforcos continuous -- and driving me to inspect how binaries were constructed. 
+Other thanks go threads mentioning by @lheontra for his work developing TF 2.x binaries for Arm -- muito obrigado por seus esforcos continuous -- and driving me to inspect how binaries were constructed. 
 
 Detailed instructions to come...
 
