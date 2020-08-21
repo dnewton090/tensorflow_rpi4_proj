@@ -36,7 +36,7 @@ sudo pip3 install pybind11
 pip3 install -U --user six wheel mock
 sudo pip3 uninstall tensorflow
 ```
-Utilize this brilliant TF wheel update found at the repo @PINTO0309
+Utilize this lifesaving TF wheel update found at the repo @PINTO0309
 ```
 wget https://github.com/PINTO0309/Tensorflow-bin/raw/master/tensorflow-1.15.0-cp37-cp37m-linux_armv7l.whl
 sudo pip3 install tensorflow-1.15.0-cp37-cp37m-linux_armv7l.whl
@@ -59,7 +59,8 @@ sudo apt-get install libxvidcore-dev libx264-dev
 sudo apt-get install qt4-dev-tools libatlas-base-dev
 ```
 OpenCV-Python v4 isn't working on Pi4. Install 3.4.6.27
-```pip3 install opencv-python==3.4.6.27
+```
+pip3 install opencv-python==3.4.6.27
 python3
 import cv2
 cv2.__version__  <!---'3.4.6'--->
@@ -93,7 +94,8 @@ cd /home/pi/objdet/models/research
 protoc object_detection/protos/*.proto --python_out=.
 ```
 Download SSDLite-MobileNet model and unpack it into the object_detection directory under your current folder structure objdet/models/object_detection
-```wget http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz
+```
+wget http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz
 tar -xzvf ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz
 ```
 Download the Object_detection_picamera.py file into the object_detection directory
