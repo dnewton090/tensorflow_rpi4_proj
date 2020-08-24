@@ -116,7 +116,7 @@ python3 Object_detection_picamera.py
 python3 Object_detection_picamera.py 
 ```
 
-Other thanks go threads mentioning by @lheontra for his work developing TF 2.x binaries for Arm -- muito obrigado por seus esforcos continuous -- and driving me to inspect how binaries were constructed. 
+Other thanks go threads mentioning by @lheontra for his work developing TF 2.x binaries for Arm -- muito obrigado por seus esforços continuous -- and driving me to inspect how binaries were constructed. 
 
 Detailed instructions to come...
 
