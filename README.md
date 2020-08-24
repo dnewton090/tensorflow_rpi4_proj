@@ -66,6 +66,9 @@ import cv2
 cv2.__version__  <!---'3.4.6'--->
 ```
 Compiling and Installing Google's Protobuf Compiler
+•	Protobufs are a type of binary serialization, which uses a determined schema to encode & decode data, which can then be compiled into many low-level languages (C/C++ in our case) 
+•	Given the very large & complex data structures moving through a neural network, protobufs are used to speed up parsing & processing. 
+• This steph facilitates the conversion of the serialized protocol buffers into tensors for Tensorflow
 ```
 sudo apt-get install protobuf-compiler
 protoc -version <!---libprotoc 3.6.1--->
