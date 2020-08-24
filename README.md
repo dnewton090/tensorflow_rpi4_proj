@@ -22,13 +22,20 @@ python3 -m virtualenv venv
 source venv/bin/activate
 ```
  
-Update Linux packages, install python dependencies
+Update Linux packages:
 ```
 sudo apt update
 sudo apt-get install -y libhdf5-dev libc-ares-dev libeigen3-dev gcc gfortran python-dev libgfortran5 \
                         libatlas3-base libatlas-base-dev libopenblas-dev libopenblas-base libblas-dev \
                         liblapack-dev cython openmpi-bin libopenmpi-dev libatlas-base-dev python3-dev
+```
+...and install Python dependencies
+* Keras is a Tensorflow API intended design centric to be in a human readable format, minimizes the number of user actions required for common use cases, and it provides clear & actionable error messages.
+* Keras_preprocessing help you go from raw data on disk to a tf.data.io.Dataset object that can be used to train a model.
+* The h5py h5py package is a Pythonic interface to the HDF5 binary data format. It allows you to store huge amounts of numerical data, and easily manipulate that data into NumPy arrays.
+* pybind is intended for seamless operation of Python and C++ v11
 
+```
 sudo pip3 install keras_applications==1.0.8 --no-deps
 sudo pip3 install keras_preprocessing==1.1.0 --no-deps
 sudo pip3 install h5py==2.9.0
