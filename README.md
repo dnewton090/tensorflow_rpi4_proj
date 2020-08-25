@@ -4,7 +4,7 @@
 'https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi
 
 #### Object detection module using MobileNet-SSD deep neural network, trained on Microsoft-COCO dataset. 
-* ...although with correct binaries to support Tensorflow 1.15 on the latest Raspberry Pi Model 4B running Raspbian Buster10 on Linux Armv7l architecture, and fixes for OpenCV compatability.  
+* with correct binaries to support *Tensorflow 1.15 on the latest Raspberry Pi Model 4B* running Raspbian Buster10 on *Linux Armv7l architecture*, and fixes for OpenCV compatability.  
 
 After weeks of inspection it finally boiled down to finding a custom binary developed by @PINTO0039 
 -- many thanks for your efforts  successful patching TensorFlow issues #15062,#21574,#21855,#23082,#25120,#25748,#29617,#29704,#30359 and eveloping the wheel for Armv7l.
