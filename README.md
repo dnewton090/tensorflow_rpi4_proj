@@ -111,8 +111,11 @@ Download SSDLite-MobileNet model and unpack it into the object_detection directo
 wget http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz
 tar -xzvf ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz
 ```
-Download the Object_detection_picamera.py file into the object_detection directory
+Download the Object_detection_picamera.py file 
+into the object_detection directory
+* Ensure the changes to deprecated TFv1 statements updated as per this repo
 ```
+wget https://raw.githubusercontent.com/dnewton090/tensorflow_rpi4_proj
 wget https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi/master/Object_detection_picamera.py
 ```
 Et voilá, try to run the Script **on the Raspbian GUI, not via SSH**
