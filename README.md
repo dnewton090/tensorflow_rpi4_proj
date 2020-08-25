@@ -12,7 +12,7 @@ After weeks of inspection it finally boiled down to finding a custom binary deve
 TF2.x currently has issues with requiring a Hadoop implementation, whilst PyPI support is only up to TFv1.14.
 
 #### Code
-Download PIP and the virtual environment
+Download PIP and the Python VirtualEnvironoment
 ```
 sudo apt update
 sudo apt-get install python3-pip
