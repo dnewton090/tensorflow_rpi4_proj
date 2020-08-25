@@ -12,6 +12,26 @@ After weeks of inspection it finally boiled down to finding a custom binary deve
 TF2.x currently has issues with requiring a Hadoop implementation, whilst PyPI support is only up to TFv1.14.
 
 #### Code
+
+Firstly, install packages for the PiCam, ensuring the ribbon cable is secure with the black tabs in place, and blue tape facing the ethernet ports
+```
+sudo apt-get update
+sudo apt-get install python-picamera python3-picamera
+```
+
+Test the PiCam, ensure camera is enabled inside the configuration file
+```
+sudo raspi-config
+(5) interfacing options
+(3) camera enabled [optionally enable SSH and VNC Server as well]
+```
+
+Test a still shot with output file test.jpg
+```
+raspistill -o test.jpg
+```
+For more information https://www.raspberrypi.org/documentation/raspbian/applications/camera
+
 Download PIP and the Python VirtualEnvironoment
 ```
 sudo apt update
@@ -118,14 +138,16 @@ into the object_detection directory
 wget https://raw.githubusercontent.com/dnewton090/tensorflow_rpi4_proj
 wget https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi/master/Object_detection_picamera.py
 ```
-Et voilá, try to run the Script **on the Raspbian GUI, not via SSH**
+Et voilá, try to running the Script **on the Raspbian GUI** if there is a network communication error via SSH
+* Worrking on a solution here
+
 ```
 python3 Object_detection_picamera.py 
 ```
 ...and for a UBScam...
 
 ```
-python3 Object_detection_picamera.py 
+python3 Object_detection_picamera.py --usbcam
 ```
 
 Other thanks go threads mentioning by @lheontra for his work developing TF 2.x binaries for Arm -- muito obrigado por seus esforços continuous -- and driving me to inspect how binaries were constructed. 
